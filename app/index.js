@@ -26,13 +26,12 @@ app.post('/create-task', (req, res) => {
 
 
 
-  var google_cloud_project="task-queue-336f7";
-  var queue_name="test-execute";
-  var queue_location="southamerica-east1";
-  var service_account_email="new-task@task-queue-336f7.iam.gserviceaccount.com";
+  var google_cloud_project="your cloud project";
+  var queue_name="your queue name";
+  var queue_location="your queue location";
+  var service_account_email="your service account email";
 
 
-console.log("start");
 
 
   var task=createHttpTaskWithToken(
